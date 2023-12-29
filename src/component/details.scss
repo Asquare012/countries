@@ -1,0 +1,213 @@
+// colors
+// Dark Mode Elements
+$Dark-Blue: #2b3945;
+// Dark Mode Background 
+$Very-Dark-Blue: #202c37;
+// Dark Mode Text & Light Mode Elements
+$White: #ffffff;
+
+
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Details-section {
+    height: 80vh;
+    overflow-x: hidden;
+    padding: 0 5%;
+    background-color: $Very-Dark-Blue;
+
+    .Details-section-top {
+        height: 20%;
+        display: flex;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+
+            button {
+                @include flex;
+                height: 30px;
+                width: 100px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+                background-color: #223c47;
+                color: $White;
+                box-shadow: 1px 1px 1px $Dark-Blue;
+
+                &:hover {
+                    background-color: #122127;
+                }
+
+                &:active {
+                    background-color: #223c47;
+                }
+
+                img {
+                    padding-right: 10px;
+                }
+            }
+        }
+
+    }
+
+    .Details-section-bottom {
+        height: 60%;
+        display: flex;
+
+        .Section-bottom-left {
+            background-color: #223c47;
+            height: 100%;
+            width: 40%;
+        }
+
+        .Section-bottom-right {
+            padding-left: 10%;
+            width: 60%;
+            height: 100%;
+            color: $White;
+
+            .Top {
+                height: 20%;
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            .Mid {
+                height: 60%;
+
+                ul {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    height: 100%;
+
+                    li {
+                        list-style: none;
+                        color: #a3a6a8;
+                        font-size: 16px;
+
+                        span {
+                            font-size: 17px;
+                            font-weight: 500;
+                            color: $White;
+                        }
+                    }
+                }
+            }
+
+            .Bottom {
+                height: 20%;
+                display: flex;
+                align-items: center;
+
+                span {
+                    padding-right: 10px;
+                    font-weight: 500;
+                    font-size: 17px;
+                }
+
+                button {
+                    border: none;
+                    outline: none;
+                    height: 25px;
+                    width: 70px;
+                    border-radius: 5px;
+                    font-size: 11px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    background-color: #223c47;
+                    color: $White;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVENESS
+//Tablet
+
+@media screen and (max-width:840px) {
+    .Details-section {
+        height: 115vh;
+
+        .Details-section-top {
+            height: 15%;
+            padding-left: 5%;
+        }
+
+        .Details-section-bottom {
+            height: 75%;
+            @include flex;
+            flex-direction: column;
+
+
+            .Section-bottom-left {
+                width: 90%;
+                height: 50%;
+                @include flex;
+
+                img {
+                    height: 90%;
+                    width: 100%;
+                }
+            }
+
+            .Section-bottom-right {
+                padding-top: 20px;
+                width: 90%;
+                height: 80%;
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+// RESPONSIVENESS
+//Mobile
+
+@media screen and (max-width:650px) {
+    .Details-section {
+        height: 120vh;
+
+        .Details-section-top {
+            height: 10%;
+            margin-bottom: 70px;
+        }
+
+        .Details-section-bottom {
+            .Section-bottom-left {
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .Section-bottom-right {
+                .Top {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .Mid {
+                    ul {
+                        grid-template-columns: 1fr;
+                    }
+
+                    li {
+                        padding: 12px 0;
+                    }
+                }
+
+                .Bottom {
+                    margin-top: 80px;
+                }
+            }
+        }
+    }
+}

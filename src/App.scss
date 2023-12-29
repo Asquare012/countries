@@ -1,0 +1,42 @@
+// colors
+// Dark Mode Elements
+$Dark-Blue: #2b3945;
+// Dark Mode Background 
+$Very-Dark-Blue: #202c37;
+// Light Mode Background
+$Very-Light-Gray: #fafafa;
+// Dark Mode Text & Light Mode Elements
+$White: #ffffff;
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+body {
+    background-color: #202c37;
+    overflow-x: hidden;
+}
+
+.App {
+
+    .Navigation-section {
+        height: 70px;
+        color: $White;
+        background-color: $Dark-Blue;
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
