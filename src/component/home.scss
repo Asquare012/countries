@@ -166,10 +166,12 @@ $White: #ffffff;
             .Hero-bottom {
                 height: 60%;
                 grid-template-columns: 1fr;
+                margin-top: 80px;
 
                 .Container {
                     width: 90vw !important;
                     height: 400px;
+
 
                     .Info-section {
                         ul {

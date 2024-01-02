@@ -68,7 +68,7 @@ $White: #ffffff;
         }
 
         .Section-bottom-right {
-            padding-left: 10%;
+            padding-left: 5%;
             width: 60%;
             height: 100%;
             color: $White;
@@ -123,6 +123,14 @@ $White: #ffffff;
                     cursor: pointer;
                     background-color: #223c47;
                     color: $White;
+
+                    &:hover {
+                        background-color: #122127;
+                    }
+
+                    &:active {
+                        background-color: #223c47;
+                    }
                 }
             }
         }
