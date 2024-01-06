@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import "./home.scss";
+import "../home.scss";
 import data from "../data.json";
 
 const homeVariants = {

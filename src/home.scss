@@ -8,6 +8,7 @@ $Very-Light-Gray: #fafafa;
 // Dark Mode Text & Light Mode Elements
 $White: #ffffff;
 
+
 @mixin flex {
     display: flex;
     justify-content: center;
@@ -78,7 +79,6 @@ $White: #ffffff;
                 height: 50%;
 
                 img {
-
                     border-radius: 5px 5px 0 0;
                 }
             }
@@ -96,7 +96,6 @@ $White: #ffffff;
                         font-weight: lighter;
                         color: #a3a6a8;
                         font-size: 16px;
-
 
                         &:first-child {
                             color: $White;
@@ -171,7 +170,6 @@ $White: #ffffff;
                 .Container {
                     width: 90vw !important;
                     height: 400px;
-
 
                     .Info-section {
                         ul {

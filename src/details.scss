@@ -7,7 +7,6 @@ $Very-Dark-Blue: #202c37;
 $White: #ffffff;
 
 
-
 @mixin flex {
     display: flex;
     justify-content: center;
@@ -54,7 +53,6 @@ $White: #ffffff;
                 }
             }
         }
-
     }
 
     .Details-section-bottom {
@@ -153,7 +151,6 @@ $White: #ffffff;
             height: 75%;
             @include flex;
             flex-direction: column;
-
 
             .Section-bottom-left {
                 width: 90%;

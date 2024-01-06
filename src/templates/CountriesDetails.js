@@ -1,8 +1,8 @@
 import { NavLink, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import Data from "../data.json";
-import "./details.scss";
-import arrow from "./arrow.png";
+import "../details.scss";
+import arrow from "../arrow.png";
 
 const detailsVariants = {
   initial: {
